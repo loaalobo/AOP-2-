@@ -1,0 +1,77 @@
+/* Lorena de Almeida Ávila Lobo - lorena.aalobo@gmail.com */
+
+/* Corpo da página */
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #091F2D;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Corpo do formulário */
+form {
+    border: 3px solid #31dbbf;
+    border-radius: 3%;
+    box-shadow: 1px 1px 1px black;
+    padding: 2%;
+    background-color: #FFFFFF;
+    margin-top: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: justify;
+}
+
+/* Barra de menu horizontal no topo do formulário */
+#menu_topo {
+    background-color: #091F2D;
+    border: 3px solid #31dbbf;
+    border-radius: 3%;
+    margin: -5.7%;
+    margin-bottom: 5%;
+    display: flex;
+}
+
+#icone-esquerda {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+}
+
+#icone-direita {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 70%;
+}
+
+h1 { text-transform: uppercase;}
+
+/* Posicionamento dos títulos dos inputs de notas e faltas */
+.titulo_centralizado { text-align: center;}
+
+/* Fonte da legenda de instrução de campos obrigatórios 'required' */
+#legenda { font-size: 8pt; } 
+
+/* Margem da seção processar (que contém os botões) */ 
+#processar { margin-top: 30px; margin-bottom: 20px;}
+
+/* Estilização dos botões da seção processar*/
+.botao {
+    background-color: #091F2D;
+    color: white;
+    border: none;
+    border-radius: 10%;
+    padding: 10px;
+    transition: 0.5s color;
+}
+
+.botao:hover {
+    background-color: #091f2df1;
+    border: 1px solid black;
+    cursor: pointer;
+    color: #E59900;
+    transform: scale(1.02);
+}

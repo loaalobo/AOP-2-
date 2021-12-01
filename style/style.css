@@ -26,7 +26,7 @@ form {
 }
 
 /* Barra de menu horizontal no topo do formulário */
-#menu_topo {
+header > div:first-child {
     background-color: #091F2D;
     border: 3px solid #31dbbf;
     border-radius: 3%;
@@ -35,31 +35,33 @@ form {
     display: flex;
 }
 
-#icone-esquerda {
+.icone_pontos {
     padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 10%;
 }
 
-#icone-direita {
+.icone_linhas {
     padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 70%;
 }
 
-h1 { text-transform: uppercase;}
+header > h1 { text-transform: uppercase;}
 
 /* Posicionamento dos títulos dos inputs de notas e faltas */
-.titulo_centralizado { text-align: center;}
+thead > tr > th { text-align: center;}
+
+thead > tr > th:first-child { text-align: justify; }
 
 /* Fonte da legenda de instrução de campos obrigatórios 'required' */
-#legenda { font-size: 8pt; } 
+.legenda_tabela { font-size: 8pt; } 
 
 /* Margem da seção processar (que contém os botões) */ 
-#processar { margin-top: 30px; margin-bottom: 20px;}
+.processar { margin-top: 30px; margin-bottom: 20px;}
 
 /* Estilização dos botões da seção processar*/
-.botao {
+.processar > input {
     background-color: #091F2D;
     color: white;
     border: none;
@@ -68,7 +70,7 @@ h1 { text-transform: uppercase;}
     transition: 0.5s color;
 }
 
-.botao:hover {
+.processar > input:hover {
     background-color: #091f2df1;
     border: 1px solid black;
     cursor: pointer;

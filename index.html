@@ -14,16 +14,17 @@
     <form method="post" action="mailto:lorena.aalobo@gmail.com">
         <!-- Cabeçalho do formulário -->
         <header>         
-            <div id="menu_topo">
-            <div id="icone-esquerda"><a href="https://uvv.br/" target="_blank" title="link página uvv" ><img src="style/img/icone-menu-circulos.png" alt="ícone de menu círculos"></a></div>
-            <div id="icone-direita"><a href="https://uvv.br/" target="_blank" title="link página uvv" ><img src="style/img/icone-menu-linhas.png" alt="ícone de menu linhas"></a></div>
+            <div>
+            <div class="icone_pontos"><a href="https://uvv.br/" target="_blank" title="link página uvv" ><img src="style/img/icone-menu-circulos.png" alt="ícone de menu círculos"></a></div>
+
+            <div class="icone_linhas"><a href="https://uvv.br/" target="_blank" title="link página uvv" ><img src="style/img/icone-menu-linhas.png" alt="ícone de menu linhas"></a></div>
             </div>
             <h1>Lançamento de notas</h1> 
         </header>
         <!-- Conteúdo principal do formulário, divido em 3 seções -->
         <main>
             <!-- Permite a seleção da disciplina por meio de uma lista pré-definida -->
-            <section id="escolher_disciplina">
+            <section>
                 <label for="disciplina">Disciplina: </label>
                 <select name="disciplina" id="discplina" size="1">
                     <option value="0">Selecione a disciplina</option>
@@ -33,16 +34,16 @@
                 </select>
             </section> <br>
             <!-- Seção 2: permite a inserção dos dados de notas e quantidade de faltas por aluno | Contém campos de preenchimento obrigatório -->
-            <section id="dados_alunos">
+            <section>
                 <table>
                     <thead>
                         <tr>
                             <th>Nome do aluno</th>
-                            <th class="titulo_centralizado">Prova 1*</th>
-                            <th class="titulo_centralizado">Prova 2*</th>
-                            <th class="titulo_centralizado">Exame</th>
-                            <th class="titulo_centralizado">Média</th>
-                            <th class="titulo_centralizado">Faltas*</th>
+                            <th>Prova 1*</th>
+                            <th>Prova 2*</th>
+                            <th>Exame</th>
+                            <th>Média</th>
+                            <th>Faltas*</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -72,12 +73,12 @@
                         </tr>
                     </tbody>
                 </table>
-                <p id="legenda">Campos sinalizados com asterisco* são de preenchimento obrigatório.</p>
+                <p class="legenda_tabela">Campos sinalizados com asterisco* são de preenchimento obrigatório.</p>
             </section>
             <!-- Seção 3: responsável por agrupar os botões do formulário - envio e redefinição, respectivamente -->
-            <section id="processar">
-                <input type="submit" value="Salvar" class="botao">
-                <input type="reset" value="Limpar" class="botao">
+            <section class="processar">
+                <input type="submit" value="Salvar">
+                <input type="reset" value="Limpar">
             </section>
         </main>
     </form>
